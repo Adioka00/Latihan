@@ -13,11 +13,12 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+require_once('admin.php');
 
 // Route::get('/', function () {
    // return view('welcome');
 // });
-// 
+//
 // Route::get('/about', function () {
     // return view('about');
 // });
@@ -29,5 +30,5 @@ Route::controller(GeneralController::class)->group(function () {
     route::get('/skill','skill');
     route::get('/education','education');
     route::get('/interests','interests');
-    
+
 });
